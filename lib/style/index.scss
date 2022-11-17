@@ -1,0 +1,15 @@
+/*
+ * @Author: aFei
+ * @Date: 2022-11-16 16:53:45
+*/
+/*
+ * @LastEditors: aFei
+ * @LastEditTime: 2022-11-17 09:53:25
+*/
+.vue-echarts-block-plus {
+  --echarts-block-height: 400px;
+  --echarts-block-width : 90%;
+  width                 : var(--echarts-block-width);
+  height                : var(--echarts-block-height);
+  margin                : 0 auto;
+}

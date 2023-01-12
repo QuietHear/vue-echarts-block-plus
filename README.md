@@ -4,7 +4,7 @@
 
 ## 安装
 	npm i vue-echarts-block-plus
-	// 不需要再安装官方组件，已内置（echarts v5.4.0）
+	// 不需要再安装官方组件，已内置（echarts v5.4.1）
 
 ## 使用
 	import vueEchartsBlockPlus from "vue-echarts-block-plus";

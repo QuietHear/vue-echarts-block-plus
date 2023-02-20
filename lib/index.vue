@@ -4,14 +4,13 @@
 */
 /*
  * @LastEditors: aFei
- * @LastEditTime: 2023-01-12 16:38:47
+ * @LastEditTime: 2023-02-20 14:41:38
 */
 <template>
   <div :id="id" class="vue-echarts-block-plus"></div>
 </template>
 <script setup>
 import * as echarts from "echarts";
-import { ref, onBeforeUnmount, shallowRef, watch, onMounted } from "vue";
 const emit = defineEmits(["getRef"]);
 const props = defineProps({
   // 图表ID

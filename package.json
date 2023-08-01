@@ -1,7 +1,7 @@
 {
   "name": "vue-echarts-block-plus",
   "description": "vue3版echarts组件",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "author": "aFei <1106728884@qq.com>",
   "license": "MIT",
   "main": "dist/vue-echarts-block-plus.umd.js",

@@ -43967,6 +43967,9 @@ const aX = ["id"], nX = {
       () => t.option,
       () => {
         i();
+      },
+      {
+        deep: !0
       }
     ), (l, u) => (RL(), NL("div", {
       id: r.id,

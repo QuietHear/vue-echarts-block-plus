@@ -4,7 +4,7 @@
 */
 /*
  * @LastEditors: aFei
- * @LastEditTime: 2023-02-20 14:41:38
+ * @LastEditTime: 2023-08-01 13:29:19
 */
 <template>
   <div :id="id" class="vue-echarts-block-plus"></div>
@@ -76,6 +76,9 @@ watch(
   () => props.option,
   () => {
     changeData();
+  },
+  {
+    deep: true
   }
 );
 </script>

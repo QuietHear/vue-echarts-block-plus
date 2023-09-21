@@ -4,12 +4,14 @@
 */
 /*
  * @LastEditors: aFei
- * @LastEditTime: 2023-09-21 13:16:56
+ * @LastEditTime: 2023-09-21 17:22:36
 */
 <template>
   <div class="demo">
-    <el-button @click="changeData">切换数据</el-button>
-    <vue-echarts-block-plus id="a" :option="option" />
+    <el-scrollbar>
+      <el-button @click="changeData">切换数据</el-button>
+      <vue-echarts-block-plus id="a" :option="option" />
+    </el-scrollbar>
   </div>
 </template>
 <script setup>

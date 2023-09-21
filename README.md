@@ -1,6 +1,8 @@
 # echarts组件（vue3版）
 ***vue3版本*** | [**vue2版本**](https://github.com/QuietHear/vue-echarts-block '右键新窗口浏览')
 
+## 预览
+	clone项目后npm run preview即可
 
 ## 安装
 	npm i vue-echarts-block-plus

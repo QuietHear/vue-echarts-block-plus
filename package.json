@@ -1,7 +1,7 @@
 {
   "name": "vue-echarts-block-plus",
   "description": "echarts组件 vue3版组件",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "author": "aFei <1106728884@qq.com>",
   "license": "MIT",
   "main": "dist/vue-echarts-block-plus.umd.js",
@@ -27,8 +27,8 @@
   "repository": "https://github.com/QuietHear/vue-echarts-block-plus",
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
-    "echarts": "^5.5.0",
-    "element-plus": "^2.7.8",
+    "echarts": "^5.5.1",
+    "element-plus": "^2.8.4",
     "sass": "^1.77.8",
     "unplugin-auto-import": "^0.18.2",
     "vite": "^4.3.9",

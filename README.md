@@ -8,7 +8,7 @@
 
 ## 安装
 	npm i vue-echarts-block-plus
-	// 不需要再安装官方组件，已内置（echarts v5.5.0）
+	// 不需要再安装官方组件，已内置（echarts v5.5.1）
 
 
 ## 使用
@@ -32,6 +32,10 @@
 * `option`：图表配置-->Object;必传
 
 * `@getRef`：图标创建时触发-->第一个参数返回图表ref
+
+
+## 2. 方法
+* `changeSize`：手动重绘当前图表
 
 
 ## 2. 官方文档

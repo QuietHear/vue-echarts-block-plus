@@ -1,10 +1,10 @@
 /*
- * @Author: aFei
- * @Date: 2022-11-16 16:53:45
+* @Author: aFei
+* @Date: 2022-11-16 16:53:45
 */
 /*
  * @LastEditors: aFei
- * @LastEditTime: 2023-08-01 13:29:19
+ * @LastEditTime: 2024-11-21 17:36:03
 */
 <template>
   <div :id="id" class="vue-echarts-block-plus"></div>
@@ -35,7 +35,7 @@ const props = defineProps({
 const myChart = shallowRef();
 // Echarts重绘
 const changeSize = () => {
-  myChart.value.resize();
+  myChart.value?.resize();
 };
 // 数据重置
 const changeData = () => {
@@ -47,8 +47,11 @@ const init = () => {
   myChart.value = echarts.init(document.getElementById(props.id));
   emit("getRef", myChart.value);
   changeData();
-  window.addEventListener("resize", changeSize);
+  resizePageObserver.observe(document.getElementById(props.id));
 };
+const resizePageObserver = new ResizeObserver(entries => {
+  changeSize();
+});
 onMounted(() => {
   console.log(document.getElementById(props.id), 'dom begin');
   if (document.getElementById(props.id)) {
@@ -66,7 +69,7 @@ onMounted(() => {
 onBeforeUnmount(() => {
   if (myChart.value) {
     myChart.value.dispose();
-    window.removeEventListener("resize", changeSize);
+    resizePageObserver.unobserve(document.getElementById(props.id));
   } else {
     clearInterval(inter.value);
   }
@@ -81,6 +84,7 @@ watch(
     deep: true
   }
 );
+defineExpose({ changeSize });
 </script>
 <style lang="scss">
 @use "style/index.scss" as *;

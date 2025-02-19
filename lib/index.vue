@@ -4,7 +4,7 @@
 */
 /*
  * @LastEditors: aFei
- * @LastEditTime: 2024-11-21 17:36:03
+ * @LastEditTime: 2025-02-19 15:36:49
 */
 <template>
   <div :id="id" class="vue-echarts-block-plus"></div>
@@ -69,7 +69,7 @@ onMounted(() => {
 onBeforeUnmount(() => {
   if (myChart.value) {
     myChart.value.dispose();
-    resizePageObserver.unobserve(document.getElementById(props.id));
+    document.getElementById(props.id) ? resizePageObserver.unobserve(document.getElementById(props.id)) : null;
   } else {
     clearInterval(inter.value);
   }

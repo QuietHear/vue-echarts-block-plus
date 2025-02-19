@@ -44147,7 +44147,7 @@ const _X = ["id"], SX = {
         document.getElementById(n.id) && (clearInterval(l.value), u());
       }, 500);
     }), FL(() => {
-      i.value ? (i.value.dispose(), f.unobserve(document.getElementById(n.id))) : clearInterval(l.value);
+      i.value ? (i.value.dispose(), document.getElementById(n.id) && f.unobserve(document.getElementById(n.id))) : clearInterval(l.value);
     }), HL(
       () => n.option,
       () => {

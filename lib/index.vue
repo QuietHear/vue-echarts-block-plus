@@ -4,7 +4,7 @@
 */
 /*
  * @LastEditors: aFei
- * @LastEditTime: 2025-02-19 15:36:49
+ * @LastEditTime: 2025-02-28 09:52:10
 */
 <template>
   <div :id="id" class="vue-echarts-block-plus"></div>
@@ -15,21 +15,21 @@ const emit = defineEmits(["getRef"]);
 const props = defineProps({
   // 图表ID
   id: {
-    required: true,
+    required: true
   },
   // 设置数据（setOption）时的规则
   optionOpts: {
     type: Object,
     default: () => {
       return {
-        notMerge: true,
+        notMerge: true
       };
-    },
+    }
   },
   // 图表配置
   option: {
     type: Object,
-    required: true,
+    required: true
   }
 });
 const myChart = shallowRef();

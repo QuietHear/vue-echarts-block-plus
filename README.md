@@ -8,7 +8,7 @@
 
 ## 安装
 	npm i vue-echarts-block-plus
-	// 不需要再安装官方组件，已内置（echarts v5.5.1）
+	// 不需要再安装官方组件，已内置（echarts v5.6.0）
 
 
 ## 使用
